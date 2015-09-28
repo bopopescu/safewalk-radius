@@ -1,0 +1,14 @@
+sudo python setup.py install --prefix=/opt/bsdradius
+cd /opt/bsdradius
+sudo bin/install-dependencies.sh
+
+#install database
+
+sudo su - postgres
+psql
+CREATE ROLE gaiaradius WITH PASSWORD 'g414r4d19s' NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;
+CREATE DATABASE "gaia-radius" OWNER = gaiaradius ENCODING = 'UTF-8';
+\q
+
+psql gaia-radius -U gaiaradius -w g414r4d19s < /opt/bsdradius/share/bsdradius/sql/bsdradius.postgresql.1.sql
+su - postgres -c "psql $RADIUS_DB_NAME < /opt/bsdradius/share/bsdradius/sql/bsdradius.postgresql.2.sql"

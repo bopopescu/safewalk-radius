@@ -1,0 +1,8 @@
+# configure radius server clients
+# use client's hostname or ip address as section name.
+# section's name must be unique.
+
+[127.0.0.1]
+name = gaia-testing
+secret = testing123
+
