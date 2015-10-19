@@ -3,6 +3,6 @@
 # section's name must be unique.
 
 [127.0.0.1]
-name = gaia-testing
+name = safewalk-testing
 secret = testing123
 

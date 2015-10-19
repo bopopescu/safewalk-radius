@@ -86,13 +86,18 @@ def safewalk_funct_authc(received, check, reply):
   info(RADIUS_SAFEWALK_AUTHENTICATION, transaction_id, received, received = received)
   #debug(RADIUS_RECEIVED_PACKAGE, received, received = received)
   #debug(RADIUS_CHECK_PACKAGE, check, received = received)
-  
   authType = check.get('Auth-Type', [None])[0]
   if authType == 'safewalk':
     username = received.get('User-Name', [None])[0]
     password = received.get('User-Password', [None])[0]
+    ip = received.get('Client-IP-Address', [None])[0]
     # Do request to server
-    payload = {'username' : username, 'password' : password, 'transaction_id' : transaction_id}
+    payload = {
+               'username' : username, 
+               'password' : password,
+               'radius_client_ip' : ip, 
+               'transaction_id' : transaction_id,
+               }
     url = main_config['GAIA']['base_url'] + main_config['GAIA']['authentication_path']
     access_token = main_config['GAIA']['authentication_access_token']
     headers = {'AUTHORIZATION': 'Bearer {}'.format(access_token)}
@@ -112,6 +117,7 @@ def safewalk_funct_authc(received, check, reply):
       elif response_object.get('code') == 'ACCESS_CHALLENGE':
         reply_message = str(response_object.get('reply-message'))
         reply['Reply-Message'] = reply_message
+        reply['State'] = transaction_id
         info(RADIUS_AUTH_CHALLENGE, transaction_id, {'status_code': r.status_code, 'reply_message' : reply_message}, received = received)
         return None
       else:

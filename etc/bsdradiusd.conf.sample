@@ -68,7 +68,7 @@ acct_port = 1813
 # Set it to 1 to disable parallel packet processing.
 # You can achieve the same effect by passing -n or --no-threads to
 # BSD Radius server through cmd line.
-number_of_threads = 50
+number_of_threads = 25
 
 # enable or disable logging to file
 log_to_file = no
