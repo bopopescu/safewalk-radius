@@ -69,6 +69,7 @@ MODULE_OK = 1
 MODULE_REJECTED = 2
 MODULE_FAILED = 3
 MODULE_CHALLENGE = 4
+MODULE_INACTIVE = 5
 
 
 def getModuleStatusName(status):
@@ -78,13 +79,15 @@ def getModuleStatusName(status):
 	"""
 	ret = ''
 	if status == MODULE_OK:
-		ret = 'OK'
+		ret = 'ALLOWED'
 	elif status == MODULE_REJECTED:
 		ret = 'REJECTED'
 	elif status == MODULE_FAILED:
 		ret = 'FAILED'
 	elif status == MODULE_CHALLENGE:
 		ret = 'CHALLENGE'
+	elif status == MODULE_INACTIVE:
+		ret = 'INACTIVE'
 	else:
 		ret = 'UNDEFINED'
 	return ret
@@ -410,10 +413,12 @@ def execAuthenticationModules(received, check, reply):
 		dictItemsToLists(check)
 		dictItemsToLists(reply)
 		result = module.authc_funct(received, check, reply)
-		if result==True:
+		if result=='ALLOWED':
 			moduleStatus = MODULE_OK
-		elif result==None:
+		elif result=='CHALLENGE':
 			moduleStatus = MODULE_CHALLENGE
+		elif result=='INACTIVE':
+			moduleStatus = MODULE_INACTIVE
 		else:
 			moduleStatus = MODULE_REJECTED
 	except:

@@ -298,6 +298,10 @@ class BaseThread(Thread):
 			# access accept
 			code = packet.AccessChallenge
 			debug ("Sending Authorization CHALLENGE to %s (%s)" % (client.name, address))
+		elif authResult[0]==modules.MODULE_INACTIVE:
+			# simulates the same behaviour like an unknown client
+			debug ("The client is not active from the server. Don't send any rensponse to the client %s (%s)" % (client.name, address))
+			return
 		else:
 			# access reject
 			code = packet.AccessReject
@@ -436,6 +440,11 @@ class WorkingThread(BaseThread):
 				#info ('===\n')
 				debug ('Authorization successful, authentication challenge')
 				return (modules.MODULE_CHALLENGE, reply)
+			elif authcModulesResult == modules.MODULE_INACTIVE:
+				#info ('===\n')
+				debug ('Authorization phase failed')
+				#dumpPacket.dumpFailedAuthPacket(received)
+				return (modules.MODULE_INACTIVE, reply)
 			else:
 				#info ('===\n')
 				debug ('Authentication phase failed')
