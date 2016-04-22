@@ -100,7 +100,6 @@ dataFiles = [
 	('%s/sql' % shareDir, listdir('sql')),
 	('%s/tools' % shareDir, listdir('tools')),
 	('%s/user_modules' % etcDir, listdir('user_modules')),
-        ('libs' , listdir('libs')),
 ]
 
 # call setup

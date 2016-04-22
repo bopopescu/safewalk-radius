@@ -6,4 +6,3 @@ recursive-include user_modules *
 recursive-include dictionaries *
 recursive-include doc *
 recursive-include tools *.py *.conf
-recursive-include libs *
