@@ -1,6 +1,0 @@
-#!/bin/sh
-
-PYTHONPATH=/opt/bsdradius/lib/python2.7/site-packages/
-export PYTHONPATH
-
-exec /opt/bsdradius/bin/bsdradiusd.py $@
