@@ -78,7 +78,7 @@ def safewalk_funct_authz(received, check, reply):
     # pass username and password to module which has set up it's auth type.
     debug(RADIUS_AUTH_TYPE_NONE, transaction_id, received = received)
     check['User-Name'] = [username]
-    check['User-Password'] = [acctData['password']]
+    check['User-Password'] = [password]
     return True
 		
 def safewalk_funct_authc(received, check, reply):
@@ -114,6 +114,11 @@ def safewalk_funct_authc(received, check, reply):
       if response_object.get('code') == 'ACCESS_ALLOWED':
         reply_message = "Access allowed"
         reply['Reply-Message'] = reply_message
+        del response_object['code']
+        del response_object['transaction-id']
+        if check['forward_reply_items'][0]:
+          reply.update(response_object)
+
         info(RADIUS_AUTH_SUCCEED, transaction_id, {'status_code': r.status_code}, received = received)
         return 'ALLOWED'
       elif response_object.get('code') == 'ACCESS_CHALLENGE':

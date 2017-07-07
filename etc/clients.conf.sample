@@ -5,4 +5,5 @@
 [127.0.0.1]
 name = safewalk-testing
 secret = testing123
+forward_reply_items = false
 

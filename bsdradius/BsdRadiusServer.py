@@ -211,14 +211,21 @@ class BsdRadiusServer:
 		"""
 		for address, tokens in hostsInfo.items():
 			# print what we are doing
+			print tokens
+			forward_reply_items = tokens['forward_reply_items'] == 'true'
 			if str(address) not in self.hosts:
 				safewalk_logger.debug ('Adding client %s: %s' % (address, tokens['name']))
 			else:
 				oldItem = self.hosts[str(address)]
+				print type(tokens['forward_reply_items'])
+				print tokens['forward_reply_items']
+
 				if oldItem.name != tokens['name']:
 					safewalk_logger.debug ('Changing client\'s "%s" name from "%s" to "%s"' % (address, oldItem.name, tokens['name']))
 				if oldItem.secret != tokens['secret']:
 					safewalk_logger.debug ('Changing client\'s "%s" secret' % address)
+				if oldItem.forward_reply_items != forward_reply_items:
+					safewalk_logger.debug('Changing client\'s "%s" forward_reply_items' % address)
 			# if we need to log from one client only let's set the needed attributes to
 			# client's host entry
 			enableLogging = False
@@ -230,14 +237,14 @@ class BsdRadiusServer:
 					debug ('Enabling unrestricted logging for client "%s"' % tokens['name'])
 			
 			# replace old or create new client record
-			self.hosts[str(address)] = RemoteHost(address, tokens['secret'], tokens['name'], enableLogging)
+			self.hosts[str(address)] = RemoteHost(address, tokens['secret'], tokens['name'], enableLogging, forward_reply_items=forward_reply_items)
 
 
 
 class RemoteHost:
 	"""Remote RADIUS capable host we can talk to."""
 
-	def __init__(self, address, secret, name, enableLogging = False, authport = 1812, acctport = 1813):
+	def __init__(self, address, secret, name, enableLogging = False, forward_reply_items=False, authport = 1812, acctport = 1813):
 		"""Constructor.
 
 		@param   address: IP address
@@ -257,6 +264,7 @@ class RemoteHost:
 #		self.acctport	= int(acctport)
 		self.name		= str(name)
 		self.enableLogging = bool(enableLogging)
+		self.forward_reply_items = forward_reply_items
 
 
 
@@ -431,6 +439,7 @@ class WorkingThread(BaseThread):
 		authzModulesResult = modules.execAuthorizationModules(received, check, reply)
 		if authzModulesResult == modules.MODULE_OK:
 			# execute authentication modules
+			check['forward_reply_items'] = self.server.hosts[pkt.source[0]].forward_reply_items
 			authcModulesResult = modules.execAuthenticationModules(received, check, reply)
 			if authcModulesResult == modules.MODULE_OK:
 				#info ('===\n')

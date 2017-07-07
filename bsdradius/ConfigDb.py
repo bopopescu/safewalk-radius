@@ -71,7 +71,7 @@ class ConfigDb(UserDict):
 		old_clients = self['CLIENTS'].keys()
 		for row in result:
 			key = row[0]
-			self['CLIENTS'][key] = {'name': row[1], 'secret': row[2]}
+			self['CLIENTS'][key] = {'name': row[1], 'secret': row[2], 'forward_reply_items':row[3]}
 			if key in old_clients:
 				old_clients.remove(key)
 		for key in old_clients:
