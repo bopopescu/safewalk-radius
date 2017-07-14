@@ -111,23 +111,25 @@ def safewalk_funct_authc(received, check, reply):
         error(RADIUS_SAFEWALK_ERROR, transaction_id, {'status_code': r.status_code}, received = received)
       
       response_object = json.loads(r.text)
-      if response_object.get('code') == 'ACCESS_ALLOWED':
+
+      response_code =  response_object.get('code')
+      if 'code' in response_object: del response_object['code']
+      if 'transaction-id' in response_object: del response_object['transaction-id']
+      if check['forward_reply_items'][0]:
+        reply.update(response_object)
+
+      if response_code == 'ACCESS_ALLOWED':
         reply_message = "Access allowed"
         reply['Reply-Message'] = reply_message
-        del response_object['code']
-        del response_object['transaction-id']
-        if check['forward_reply_items'][0]:
-          reply.update(response_object)
-
         info(RADIUS_AUTH_SUCCEED, transaction_id, {'status_code': r.status_code}, received = received)
         return 'ALLOWED'
-      elif response_object.get('code') == 'ACCESS_CHALLENGE':
+      elif response_code == 'ACCESS_CHALLENGE':
         reply_message = str(response_object.get('reply-message'))
         reply['Reply-Message'] = reply_message
         reply['State'] = transaction_id
         info(RADIUS_AUTH_CHALLENGE, transaction_id, {'status_code': r.status_code, 'reply_message' : reply_message}, received = received)
         return 'CHALLENGE'
-      elif response_object.get('code') == 'NO_RESPONSE':
+      elif response_code == 'NO_RESPONSE':
         reply_message = str(response_object.get('reply-message'))
         reply['Reply-Message'] = reply_message
         reply['State'] = transaction_id
@@ -145,7 +147,7 @@ def safewalk_funct_authc(received, check, reply):
       return 'DENIED'
   return True
   	
-    
+
 def safewalk_funct_acct(received):
   info(RADIUS_SAFEWALK_ACCT_STATUS_TYPE, None, {"Acct-Status-Type": received['Acct-Status-Type']}, received = received)
   
