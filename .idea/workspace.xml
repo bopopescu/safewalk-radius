@@ -2,63 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bba30fa-e6da-4ab9-b6d6-5725e11f847e" name="Default" comment="">
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/BsdRadiusModule.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/BsdRadiusServer.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/Config.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/ConfigDb.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/DatabaseConnection.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/DigestAuth.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/RadClient.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/Syncdeque.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/Typecast.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/configDefaults.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/dblogging/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/dblogging/tasks.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/logger.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/modules.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/bidict.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/client.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/curved.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/dictionary.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/host.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/packet.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/server.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/pyrad/tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/safewalk_logger.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/authentication_default.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/dumpPacket.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/mod_chap.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/mod_digest.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/mod_sql.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/mod_usersfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/serverModules/preprocess.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/tasks.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/Config.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/ThreadStore.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/Typecast.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/framework.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/logger.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/sessions.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/static.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/tools.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/webform.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/bsdradius/webstuff/webstuff_version.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/dblogging/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/lib.linux-x86_64-2.7/dblogging/tasks.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/scripts-2.7/bsdradiusd" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/scripts-2.7/bsdradiusd.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/build/scripts-2.7/install-dependencies.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/PycharmProjects/safewalk-radius/bin/install-dependencies.sh" afterPath="$USER_HOME$/PycharmProjects/safewalk-radius/bin/install-dependencies.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/install.sh" afterPath="$PROJECT_DIR$/bin/install.sh" />
     </list>
     <ignored path="safewalk-radius.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,38 +27,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="safewalk_module.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/user_modules/safewalk_module.py">
+      <file leaf-file-name="user_modules.conf.sample" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+            <state relative-caret-position="645">
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modules.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/modules.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
-              <caret line="416" column="36" selection-start-line="416" selection-start-column="36" selection-end-line="416" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install-dependencies.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/version.py">
+      <file leaf-file-name="modules.conf.sample" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/modules.conf.sample">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -116,24 +47,118 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="safewalk_module.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="116" column="73" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bsdradius/version.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BsdRadiusServer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bsdradius/BsdRadiusServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3105">
+              <caret line="218" column="42" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bsdradiusd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/bsdradiusd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2640">
+              <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigDb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bsdradius/ConfigDb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clients.conf.sample" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/clients.conf.sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bsdradiusd.conf.sample" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/bsdradiusd.conf.sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1815">
+              <caret line="121" column="65" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/PycharmProjects/safewalk-radius" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/PycharmProjects/safewalk-radius/bin/install-dependencies.sh" />
         <option value="$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh" />
+        <option value="$PROJECT_DIR$/etc/bsdradiusd.conf.sample" />
+        <option value="$PROJECT_DIR$/etc/user_modules.conf.sample" />
+        <option value="$PROJECT_DIR$/etc/clients.conf.sample" />
+        <option value="$PROJECT_DIR$/bsdradius/BsdRadiusServer.py" />
+        <option value="$PROJECT_DIR$/bsdradius/ConfigDb.py" />
+        <option value="$PROJECT_DIR$/bsdradius/version.py" />
+        <option value="$PROJECT_DIR$/user_modules/safewalk_module.py" />
+        <option value="$PROJECT_DIR$/bin/install.sh" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="57" />
     <option name="y" value="-4" />
-    <option name="width" value="1377" />
-    <option name="height" value="784" />
+    <option name="width" value="1543" />
+    <option name="height" value="904" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,13 +185,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="safewalk-radius" />
+              <option name="myItemId" value="altipeak.safewalk-radius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="altipeak.safewalk-radius" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -176,7 +207,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="safewalk-radius" />
+              <option name="myItemId" value="altipeak.safewalk-radius" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -190,21 +221,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="safewalk-radius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="altipeak.safewalk-radius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="safewalk-radius" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -216,12 +233,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="altipeak.safewalk-radius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="altipeak.safewalk-radius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bsdradius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="altipeak.safewalk-radius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="altipeak.safewalk-radius" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -233,6 +279,57 @@
       <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="altipeak.safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="altipeak.safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="altipeak.safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -247,6 +344,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -261,7 +359,24 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <module name="safewalk-radius" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -274,6 +389,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -293,6 +409,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -312,6 +429,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -333,6 +451,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -355,6 +474,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="safewalk-radius" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -412,30 +532,59 @@
       <option name="project" value="LOCAL" />
       <updated>1462747017607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="https://altipeak.plan.io/issues/1625">
+      <created>1499460344613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1499460344613</updated>
+    </task>
+    <task id="LOCAL-00006" summary="https://altipeak.plan.io/issues/1625">
+      <created>1500062292510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500062292510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="https://altipeak.plan.io/issues/1625">
+      <created>1500063286944</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1500063286945</updated>
+    </task>
+    <task id="LOCAL-00008" summary="https://altipeak.plan.io/issues/1625">
+      <created>1500064963884</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1500064963884</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1377" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="57" y="-4" width="1543" height="904" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25369823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29113925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34012738" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -451,30 +600,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove build directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove build directory" />
+    <MESSAGE value="https://altipeak.plan.io/issues/1625" />
+    <option name="LAST_COMMIT_MESSAGE" value="https://altipeak.plan.io/issues/1625" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/user_modules/safewalk_module.py">
+    <entry file="file://$PROJECT_DIR$/doc/installation.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/modules.py">
+    <entry file="file://$PROJECT_DIR$/etc/dump_packet.conf.sample">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
-          <caret line="416" column="36" selection-start-line="416" selection-start-column="36" selection-end-line="416" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh">
+    <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -482,23 +630,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/user_modules/safewalk_module.py">
+    <entry file="file://$PROJECT_DIR$/etc/usersfile.conf.sample">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/modules.py">
+    <entry file="file://$PROJECT_DIR$/user_modules/example_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
-          <caret line="416" column="36" selection-start-line="416" selection-start-column="36" selection-end-line="416" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/version.py">
+    <entry file="file://$PROJECT_DIR$/user_modules/example2_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -506,10 +659,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh">
+    <entry file="file://$PROJECT_DIR$/doc/installation.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/dump_packet.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/usersfile.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example2_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/installation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/dump_packet.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/usersfile.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example2_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/installation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/dump_packet.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bsdradiusd.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bsdradiusd.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/user_modules/safewalk_module.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/modules.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/user_modules/safewalk_module.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/modules.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bsdradius/version.py" />
+    <entry file="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/bin/install-dependencies.sh" />
+    <entry file="file://$PROJECT_DIR$/doc/installation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/dump_packet.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/usersfile.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/example2_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/modules.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/user_modules.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsdradius/modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="414" column="54" selection-start-line="414" selection-start-column="54" selection-end-line="414" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsdradius/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="114" column="42" selection-start-line="114" selection-start-column="42" selection-end-line="114" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/clients.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bsdradiusd.conf.sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" column="65" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsdradius/BsdRadiusServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="218" column="42" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/bsdradiusd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsdradius/ConfigDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="73" column="84" selection-start-line="73" selection-start-column="84" selection-end-line="73" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsdradius/version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_modules/safewalk_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="116" column="73" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/altipeak.safewalk-radius.iml" filepath="$PROJECT_DIR$/.idea/altipeak.safewalk-radius.iml" />
       <module fileurl="file://$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/.idea/safewalk-radius.iml" filepath="$USER_HOME$/PycharmProjects/altipeak.safewalk-radius/.idea/safewalk-radius.iml" />
     </modules>
   </component>
