@@ -143,7 +143,7 @@ def safewalk_funct_authc(received, check, reply):
     except Exception:
       reply_message = "Can't connect to Safewalk Server"
       reply['Reply-Message'] = reply_message
-      error(RADIUS_AUTH_DENIED, transaction_id, {'status_code': r.status_code, 'reply_message' : reply_message}, received = received)
+      error(RADIUS_AUTH_DENIED, transaction_id, {'status_code': 'exception', 'reply_message' : reply_message}, received = received)
       return 'DENIED'
   return True
   	
