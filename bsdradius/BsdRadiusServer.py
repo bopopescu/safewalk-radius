@@ -211,14 +211,11 @@ class BsdRadiusServer:
 		"""
 		for address, tokens in hostsInfo.items():
 			# print what we are doing
-			print tokens
 			forward_reply_items = tokens['forward_reply_items'] == 'true'
 			if str(address) not in self.hosts:
 				safewalk_logger.debug ('Adding client %s: %s' % (address, tokens['name']))
 			else:
 				oldItem = self.hosts[str(address)]
-				print type(tokens['forward_reply_items'])
-				print tokens['forward_reply_items']
 
 				if oldItem.name != tokens['name']:
 					safewalk_logger.debug ('Changing client\'s "%s" name from "%s" to "%s"' % (address, oldItem.name, tokens['name']))
