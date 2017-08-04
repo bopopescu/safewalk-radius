@@ -7,7 +7,7 @@ if [ "$1" = "" ]; then
     else
 	echo "You need to specify the Authentication Access Token for Radius"
 	exit 0
-    fi"
+    fi
 else
     RADIUS_ACCESS_TOKEN=$1
 fi
