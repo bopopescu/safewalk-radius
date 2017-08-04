@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 PREFIX=/opt/bsdradius
 if [ "$1" = "" ]; then
