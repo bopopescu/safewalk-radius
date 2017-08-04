@@ -24,4 +24,4 @@ bin/install-dependencies.sh
 sed -i 's|clients_query =.*|clients_query = select address, name, secret, forward_reply_items from gaia_radius_interface_radiusclient|' $PREFIX/etc/bsdradius/bsdradiusd.conf | grep clients_query
 sed -i "s|authentication_access_token.*=.*|authentication_access_token=$RADIUS_ACCESS_TOKEN|" $PREFIX/etc/bsdradius/bsdradiusd.conf
 sed -i "s|base_url.*=.*|base_url=https://localhost|" $PREFIX/etc/bsdradius/bsdradiusd.conf
-#sed -i "s|RADIUS_VERSION.*=.*|RADIUS_VERSION = '$RADIUS_VERSION'|" $SAFEWALK_SERVER_DIR/gaia_server/common_settings.py
+echo "$RADIUS_VERSION" > /opt/safewalk/RADIUS_VERSION
