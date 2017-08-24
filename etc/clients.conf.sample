@@ -2,3 +2,8 @@
 # use client's hostname or ip address as section name.
 # section's name must be unique.
 
+[127.0.0.1]
+name = safewalk-testing
+secret = testing123
+forward_reply_items = true
+
