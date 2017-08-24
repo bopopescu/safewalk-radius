@@ -37,6 +37,6 @@ Contains BSD Radius server version info
 
 major = 1
 minor = 2
-debug = 2
+debug = 3
 
 fullVersion = '%s.%s.%s' % (major, minor, debug)

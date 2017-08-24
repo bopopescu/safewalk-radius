@@ -8,7 +8,7 @@ export PYTHONPATH
 #easy_install -d $PYTHONPATH celery
 
 easy_install -d $PYTHONPATH /opt/bsdradius/libs/pytz-2015.4.tar.gz
-easy_install -d $PYTHONPATH /opt/bsdradius/libs/requests-2.3.0.tar.gz
+easy_install -d $PYTHONPATH /opt/bsdradius/libs/requests-2.18.4.tar.gz
 easy_install -d $PYTHONPATH /opt/bsdradius/libs/psycopg2-2.5.1.tar.gz
 easy_install -d $PYTHONPATH /opt/bsdradius/libs/anyjson-0.3.3.tar.gz
 easy_install -d $PYTHONPATH /opt/bsdradius/libs/amqp-1.4.6.tar.gz
