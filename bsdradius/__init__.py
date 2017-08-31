@@ -43,6 +43,7 @@ __all__ = [
 	'BsdRadiusServer',
 	'Config',
 	'ConfigDb',
+	'safewalk_api',
 	'DatabaseConnection',
 	'DigestAuth',
 	'Syncdeque',
