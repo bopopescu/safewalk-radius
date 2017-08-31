@@ -211,7 +211,7 @@ class BsdRadiusServer:
 		"""
 		for address, tokens in hostsInfo.items():
 			# print what we are doing
-			forward_reply_items = tokens['forward_reply_items']
+			forward_reply_items = tokens['forward_reply_items'] == 'true' or tokens['forward_reply_items']==True
 			if str(address) not in self.hosts:
 				safewalk_logger.debug ('Adding client %s: %s' % (address, tokens['name']))
 			else:
