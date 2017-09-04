@@ -82,20 +82,23 @@ log_to_file = no
 # write the accounting message log file.
 fast_accounting = no
 
-# GAIA Server
+# SAFEWALK Server
 
-[GAIA]
-
-base_url=http://localhost:8000
-
-authentication_path=/api/v1/auth/authenticate/
-authentication_access_token=0dc55f8e9bc39144951ef88bc75ea1a4726fc6cf
+[SAFEWALK]
+swk_host = localhost
+swk_protocol = http
+swk_auth_port = 8000
+swk_api_port = 8000
+swk_auth_path=/api/v1/auth/authenticate/
+swk_client_list_path=/api/v1/admin/radius_list/
+swk_auth_access_token=0dc55f8e9bc39144951ef88bc75ea1a4726fc6cf
+swk_api_access_token=984eeda0d9fdec43fad74a7569b8389fb3413494
 
 # contains settings for connecting to database
 [DATABASE]
 
 # enable or disable configuration data lookup in database
-enable = yes
+enable = no
 
 # database type
 # Suppored RDMS': postgresql, mysql, sqlite
@@ -120,8 +123,6 @@ refresh_rate = 60
 # The first three fields of result set must bee in such an order:
 # client's ip address, name, shared secret.
 clients_query = select address, name, secret, forward_reply_items from gaia_radius_interface_radiusclient
-
-
 
 # Authorization section
 [AUTHORIZATION]

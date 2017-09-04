@@ -21,7 +21,6 @@ RADIUS_VERSION=$VERSION_MAJOR.$VERSION_MINOR.$VERSION_DEBUG
 echo "version: $RADIUS_VERSION"
 
 bin/install-dependencies.sh
-sed -i 's|clients_query =.*|clients_query = select address, name, secret, forward_reply_items from gaia_radius_interface_radiusclient|' $PREFIX/etc/bsdradius/bsdradiusd.conf | grep clients_query
-sed -i "s|authentication_access_token.*=.*|authentication_access_token=$RADIUS_ACCESS_TOKEN|" $PREFIX/etc/bsdradius/bsdradiusd.conf
-sed -i "s|base_url.*=.*|base_url=https://localhost|" $PREFIX/etc/bsdradius/bsdradiusd.conf
+sed -i "s|swk_auth_port.*=.*|swk_auth_port = 443|" $PREFIX/etc/bsdradius/bsdradiusd.conf
+sed -i "s|swk_protocol.*=.*|swk_protocol=https|" $PREFIX/etc/bsdradius/bsdradiusd.conf
 echo "$RADIUS_VERSION" > /opt/safewalk/RADIUS_VERSION

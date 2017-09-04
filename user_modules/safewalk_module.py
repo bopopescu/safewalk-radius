@@ -100,8 +100,9 @@ def safewalk_funct_authc(received, check, reply):
                'radius_client_ip' : ip, 
                'transaction_id' : transaction_id,
                }
-    url = main_config['GAIA']['base_url'] + main_config['GAIA']['authentication_path']
-    access_token = main_config['GAIA']['authentication_access_token']
+    safewalk_conf = main_config['SAFEWALK']
+    url = '%s://%s:%s%s' % (safewalk_conf['swk_protocol'], safewalk_conf['swk_host'], safewalk_conf['swk_auth_port'], safewalk_conf['swk_auth_path'])
+    access_token = safewalk_conf['swk_auth_access_token']
     headers = {'AUTHORIZATION': 'Bearer {}'.format(access_token)}
     kwargs = {'headers': headers}
     try:

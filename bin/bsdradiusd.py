@@ -38,6 +38,7 @@ Made specially for VoIP needs.
 # Author:		$Author: valts $
 # File version:	$Revision: 333 $
 # Last changes:	$Date: 2007-08-17 02:38:15 +0300 (Pk, 17 Aug 2007) $
+from bsdradius.safewalk_api import SafewalkAPI
 
 __software__ = 'Bsdradius'
 mayRunInBackground = False
@@ -179,6 +180,12 @@ def main():
 		confDb = ConfigDb(dbh1)
 		confDb.ReadClients()
 		srv.addClientHosts(confDb['CLIENTS'])
+
+	if main_config['SAFEWALK']['swk_client_list_path']:
+		info('--- Reading server clients from Safewalk ---')
+		safewalk_api = SafewalkAPI()
+		safewalk_api.ReadClients()
+		srv.addClientHosts(safewalk_api['CLIENTS'])
 				
 	debug('--- Clients: ---')
 	for addr in srv.hosts:
