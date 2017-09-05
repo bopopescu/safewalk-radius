@@ -181,11 +181,11 @@ def main():
 		confDb.ReadClients()
 		srv.addClientHosts(confDb['CLIENTS'])
 
-	if main_config['SAFEWALK']['swk_client_list_path']:
-		info('--- Reading server clients from Safewalk ---')
-		safewalk_api = SafewalkAPI()
-		safewalk_api.ReadClients()
-		srv.addClientHosts(safewalk_api['CLIENTS'])
+	#if main_config['SAFEWALK']['swk_client_list_path']:
+	#	info('--- Reading server clients from Safewalk ---')
+	#	safewalk_api = SafewalkAPI()
+	#	safewalk_api.ReadClients()
+	#	srv.addClientHosts(safewalk_api['CLIENTS'])
 				
 	debug('--- Clients: ---')
 	for addr in srv.hosts:
