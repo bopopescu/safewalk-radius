@@ -8,6 +8,8 @@
 # server directory root
 prefix = /opt/bsdradius
 
+django_command_file = %(prefix)s/bin/get_clients.sh
+
 # path to directory that conatins configuration files
 conf_dir = %(prefix)s/etc/bsdradius
 
@@ -50,7 +52,7 @@ user_modules_file = %(conf_dir)s/user_modules.conf
 
 # home IP address
 # comment out this line to bind server to all network interfaces
-#home = 0.0.0.0
+home = 0.0.0.0
 
 # After performing initial tasks BSD Radius will switch to user and
 # group mentioned below. To run BSD Radius server as current user comment
@@ -85,6 +87,8 @@ fast_accounting = no
 # SAFEWALK Server
 
 [SAFEWALK]
+api_enable = no
+django_enable = yes
 swk_host = localhost
 swk_protocol = http
 swk_auth_port = 8000
