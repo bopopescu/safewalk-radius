@@ -79,6 +79,10 @@ defaultOptions = {
 'refresh_rate' : '60',
 'clients_query' : 'select address, name, secret from radiusClients',
 },
+'SAFEWALK' : {
+'api_enable' : 'no',
+'django_enable' : 'no',
+},
 'AUTHORIZATION' : {
 'packet_timeout' : '5',
 'auth_queue_maxlength' : '300',
@@ -110,6 +114,10 @@ defaultTypes = {
 'DATABASE' : {
 'enable' : 'bool',
 'refresh_rate' : 'int',
+},
+'SAFEWALK' : {
+'api_enable' : 'bool',
+'django_enable' : 'bool',
 },
 'AUTHORIZATION' : {
 'packet_timeout' : 'int',

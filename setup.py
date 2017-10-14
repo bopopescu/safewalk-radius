@@ -115,7 +115,7 @@ dist = distutils.core.setup(
 	description = 'BSD Radius server',
 	packages = ['bsdradius', 'bsdradius.pyrad', 'bsdradius.serverModules',
 		'bsdradius.webstuff'],
-	scripts = ['bin/bsdradiusd.py', 'bin/bsdradiusd', 'bin/install-dependencies.sh'],
+	scripts = ['bin/bsdradiusd.py', 'bin/bsdradiusd', 'bin/install-dependencies.sh', 'bin/get_clients.sh'],
 	data_files = dataFiles,
 #	py_modules = [],
 )
