@@ -7,10 +7,18 @@ django-admin.py shell --settings=gaia_server.settings<<EOF
 from gaia_radius_interface.models import RadiusClient
 import json
 
-clients = RadiusClient.objects.filter(is_active=True).values('name','address', 'secret', 'forward_reply_items')
+clients = RadiusClient.objects.filter(is_active=True)
+r_clients=[]
+for c in clients:
+  r_clients.append({
+    'name': c.name,
+    'address': c.address,
+    'secret': c.secret,
+    'forward_reply_items': c.forward_reply_items
+  })
 
 with open('/tmp/radius_clients', mode='w') as f:
-    json.dump(list(clients), f)
+    json.dump(r_clients, f)
     print 'guardado'
 
 EOF
