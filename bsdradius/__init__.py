@@ -44,6 +44,7 @@ __all__ = [
 	'Config',
 	'ConfigDb',
 	'safewalk_api',
+	'safewalk_django',
 	'DatabaseConnection',
 	'DigestAuth',
 	'Syncdeque',

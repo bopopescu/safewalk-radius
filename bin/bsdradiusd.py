@@ -38,7 +38,6 @@ Made specially for VoIP needs.
 # Author:		$Author: valts $
 # File version:	$Revision: 333 $
 # Last changes:	$Date: 2007-08-17 02:38:15 +0300 (Pk, 17 Aug 2007) $
-from bsdradius.safewalk_api import SafewalkAPI
 
 __software__ = 'Bsdradius'
 mayRunInBackground = False
@@ -60,6 +59,8 @@ from bsdradius import modules
 from bsdradius import Config
 from bsdradius.pyrad import dictionary
 from bsdradius.ConfigDb import ConfigDb
+from bsdradius.safewalk_api import SafewalkAPI
+from bsdradius.safewalk_django import SafewalkDjango
 from bsdradius.configDefaults import defaultOptions, defaultTypes
 from bsdradius.logger import *
 
@@ -181,11 +182,17 @@ def main():
 		confDb.ReadClients()
 		srv.addClientHosts(confDb['CLIENTS'])
 
-	#if main_config['SAFEWALK']['swk_client_list_path']:
-	#	info('--- Reading server clients from Safewalk ---')
-	#	safewalk_api = SafewalkAPI()
-	#	safewalk_api.ReadClients()
-	#	srv.addClientHosts(safewalk_api['CLIENTS'])
+	if main_config['SAFEWALK']['api_enable']:
+		info('--- Reading server clients from Safewalk API ---')
+		safewalk_api = SafewalkAPI()
+		safewalk_api.ReadClients()
+		srv.addClientHosts(safewalk_api['CLIENTS'])
+
+	if main_config['SAFEWALK']['django_enable']:
+		info('--- Reading server clients from Django ---')
+		safewalk_django = SafewalkDjango()
+		safewalk_django.ReadClients()
+		srv.addClientHosts(safewalk_django['CLIENTS'])
 				
 	debug('--- Clients: ---')
 	for addr in srv.hosts:
@@ -214,23 +221,36 @@ def main():
 	
 	# do some maintenace tasks
 	everythingOk = True
-	dbEnable = main_config['DATABASE']['enable']
-	dbRefreshCounter = 0
-	dbRefreshRate = main_config['DATABASE']['refresh_rate']
+	refresh_enable = main_config['DATABASE']['enable'] or main_config['SAFEWALK']['django_enable'] or main_config['SAFEWALK']['api_enable']
+	refreshCounter = 0
+	refreshRate = main_config['DATABASE']['refresh_rate']
 	while everythingOk:
 		time.sleep(1)
 		
 		# refresh radius server clients from DB
-		if dbEnable:
-			dbRefreshCounter += 1
-			if dbRefreshCounter >= dbRefreshRate:
-				#info ('Refreshing config from DB')
-				#debug ('I was waiting for it %s seconds :)' % dbRefreshCounter)
-				dbRefreshCounter = 0
-				old_clients_addresses = confDb.ReadClients()
-				if old_clients_addresses:
-					srv.removeClientHosts(old_clients_addresses)
-				srv.addClientHosts(confDb['CLIENTS'])
+		if refresh_enable:
+			refreshCounter += 1
+			if refreshCounter >= refreshRate:
+				#info ('Refreshing config')
+				#debug ('I was waiting for it %s seconds :)' % refreshCounter)
+				refreshCounter = 0
+				if main_config['DATABASE']['enable']:
+					old_clients_addresses = confDb.ReadClients()
+					if old_clients_addresses:
+						srv.removeClientHosts(old_clients_addresses)
+					srv.addClientHosts(confDb['CLIENTS'])
+
+				if main_config['SAFEWALK']['api_enable']:
+					old_clients_addresses = safewalk_api.ReadClients()
+					if old_clients_addresses:
+						srv.removeClientHosts(old_clients_addresses)
+					srv.addClientHosts(safewalk_api['CLIENTS'])
+
+				if main_config['SAFEWALK']['django_enable']:
+					old_clients_addresses = safewalk_django.ReadClients()
+					if old_clients_addresses:
+						srv.removeClientHosts(old_clients_addresses)
+					srv.addClientHosts(safewalk_django['CLIENTS'])
 				# print only changed clients
 	
 	
