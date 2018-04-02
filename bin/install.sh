@@ -16,7 +16,8 @@ VERSION_MAJOR=$(cat bsdradius/version.py | grep "major =" | grep -Eo "[0-9]" | x
 VERSION_MINOR=$(cat bsdradius/version.py | grep "minor =" | grep -Eo "[0-9]" | xargs)
 VERSION_DEBUG=$(cat bsdradius/version.py | grep "debug =" | grep -Eo "[0-9]" | xargs)
 RADIUS_VERSION=$VERSION_MAJOR.$VERSION_MINOR.$VERSION_DEBUG
-echo "version: $RADIUS_VERSION"
+
+echo "$RADIUS_VERSION" > $PREFIX/version
 
 bin/install-dependencies.sh
 sed -i "s|swk_auth_port.*=.*|swk_auth_port=8445|" $PREFIX/etc/bsdradius/bsdradiusd.conf
