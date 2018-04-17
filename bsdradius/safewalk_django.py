@@ -36,8 +36,9 @@ class SafewalkDjango(UserDict):
 	def _get_clients(self):
 		clients=[]
 		command = main_config['PATHS']['django_command_file']
+		customer = main_config['SAFEWALK']['customer']
 		with open(os.devnull, 'w') as devnull:
-			subprocess.call([command], stdout=devnull, stderr=devnull)
+			subprocess.call([command, customer], stdout=devnull, stderr=devnull)
 		try:
 			with open(RADIUS_CLIENTS_FILE) as json_data:
 				d = json.load(json_data)

@@ -82,6 +82,7 @@ defaultOptions = {
 'SAFEWALK' : {
 'api_enable' : 'no',
 'django_enable' : 'no',
+'customer' : '',
 },
 'AUTHORIZATION' : {
 'packet_timeout' : '5',

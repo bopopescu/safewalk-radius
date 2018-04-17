@@ -1,6 +1,9 @@
 #!/bin/bash
 
 source /home/safewalk/safewalk-server-venv/bin/activate
+CLIENT_ID=$1
+
+export CLIENT_ID
 
 django-admin.py shell --settings=gaia_server.settings<<EOF
 
