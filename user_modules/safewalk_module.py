@@ -89,17 +89,21 @@ def safewalk_funct_authc(received, check, reply):
     username = received.get('User-Name', [None])[0]
     password = received.get('User-Password', [None])[0]
     ip = received.get('Client-IP-Address', [None])[0]
+    nas = received.get('NAS-IP-Address', [None])[0]
     state = received.get('State', [None])[0]
     
     transaction_id = state or reply.get('transaction_id')[0]
     info(RADIUS_SAFEWALK_AUTHENTICATION, transaction_id, received, received = received)
     # Do request to server
     payload = {
-               'username' : username, 
-               'password' : password,
-               'radius_client_ip' : ip, 
+               'username' : username,
+               'radius_client_ip' : ip,
+               'radius_nas_ip': nas,
                'transaction_id' : transaction_id,
                }
+    if password:
+      payload['password'] = password
+      
     safewalk_conf = main_config['SAFEWALK']
     url = '%s://%s:%s%s' % (safewalk_conf['swk_protocol'], safewalk_conf['swk_host'], safewalk_conf['swk_auth_port'], safewalk_conf['swk_auth_path'])
     access_token = safewalk_conf['swk_auth_access_token']
