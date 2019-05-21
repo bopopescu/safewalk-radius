@@ -32,21 +32,23 @@ class SafewalkLogger(object):
   def log(self, level, message_id, transaction_id=None, message_params={}, received = {}):
     if not transaction_id:
       transaction_id = uuid.uuid4().hex
-      
+
     message_params = message_params.copy()
     received = received.copy()
     if 'User-Password' in message_params.keys():
       message_params['User-Password'] = ['********']
     if 'User-Password' in received.keys():
       received['User-Password'] = ['********']
+    params_str = str(message_params).encode('utf-8')
+    message_id_str =  message_id.encode('utf-8')
     try:
-      async_log.delay(level, message_id, transaction_id, message_params, received)
+      async_log.delay(level, message_id_str, transaction_id, params_str, received)
     except:
       pass
     if level=='warn':
       level='warning'
     fn = getattr(logger, level)
-    fn("MESSAGE: %s PARAMS: %s" % (message_id, message_params))
+    fn("MESSAGE: %s PARAMS: %s" % (message_id_str, params_str))
 
 safewalk_logger = SafewalkLogger()
 
