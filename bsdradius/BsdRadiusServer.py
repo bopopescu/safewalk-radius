@@ -234,7 +234,7 @@ class BsdRadiusServer:
 					debug ('Enabling unrestricted logging for client "%s"' % tokens['name'])
 			
 			# replace old or create new client record
-			self.hosts[str(address)] = RemoteHost(address, tokens['secret'], tokens['name'], enableLogging, forward_reply_items=forward_reply_items)
+			self.hosts[str(address)] = RemoteHost(address, tokens['secret'].encode('utf-8'), tokens['name'].encode('utf-8'), enableLogging, forward_reply_items=forward_reply_items)
 
 
 
