@@ -10,6 +10,13 @@ django-admin.py shell --settings=gaia_server.settings<<EOF
 from gaia_radius_interface.models import RadiusClient
 import json
 
+CLIENT_ID = os.environ['CLIENT_ID']
+
+if CLIENT_ID:
+	RADIUS_CLIENTS_FILE = '/tmp/radius_clients_%s' % CLIENT_ID
+else:
+	RADIUS_CLIENTS_FILE='/tmp/radius_clients'
+
 clients = RadiusClient.objects.filter(is_active=True)
 r_clients=[]
 for c in clients:
@@ -20,10 +27,9 @@ for c in clients:
     'forward_reply_items': c.forward_reply_items
   })
 
-with open('/tmp/radius_clients', mode='w') as f:
+with open(RADIUS_CLIENTS_FILE, mode='w') as f:
     json.dump(r_clients, f)
-    print 'guardado'
 
 EOF
-
+CLIENT_ID=
 deactivate

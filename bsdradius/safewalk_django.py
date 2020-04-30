@@ -5,7 +5,12 @@ from bsdradius.Config import main_config
 import subprocess
 import os
 
-RADIUS_CLIENTS_FILE='/tmp/radius_clients'
+CLIENT_ID = os.environ['CLIENT_ID']
+
+if CLIENT_ID:
+	RADIUS_CLIENTS_FILE = '/tmp/radius_clients_%s' % CLIENT_ID
+else:
+	RADIUS_CLIENTS_FILE='/tmp/radius_clients'
 
 class SafewalkDjango(UserDict):
 	"""Class for readin configuration data from Safewalk
