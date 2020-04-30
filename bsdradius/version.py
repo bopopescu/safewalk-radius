@@ -32,7 +32,6 @@ Contains BSD Radius server version info
 # HeadURL		$HeadURL: file:///Z:/backup/svn/bsdradius/branches/v_0_7/bsdradius/version.py $
 # Author:		$Author: valts $
 # File version:	$Revision: 242 $
-# Last changes:	$Date: 2006-06-27 14:43:26 +0300 (Ot, 27 Jūn 2006) $
 
 
 major = 1
