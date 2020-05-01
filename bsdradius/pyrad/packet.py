@@ -12,7 +12,6 @@ RADIUS packet
 # HeadURL		$HeadURL: file:///Z:/backup/svn/bsdradius/branches/v_0_7/bsdradius/pyrad/packet.py $
 # Author:		$Author: valts $
 # File version:	$Revision: 231 $
-# Last changes:	$Date: 2006-06-16 14:28:51 +0300 (Pk, 16 Jūn 2006) $
 
 
 __docformat__	= "epytext en"

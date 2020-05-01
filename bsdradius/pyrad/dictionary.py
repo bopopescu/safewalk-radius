@@ -43,7 +43,6 @@ The datatypes currently supported are::
 # HeadURL		$HeadURL: file:///Z:/backup/svn/bsdradius/branches/v_0_7/bsdradius/pyrad/dictionary.py $
 # Author:		$Author: valts $
 # File version:	$Revision: 230 $
-# Last changes:	$Date: 2006-06-08 17:17:21 +0300 (Ce, 08 Jūn 2006) $
 
 
 __docformat__	= "epytext en"

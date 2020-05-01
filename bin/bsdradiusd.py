@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 ## BSDRadius is released under BSD license.
 ## Copyright (c) 2006, DATA TECH LABS

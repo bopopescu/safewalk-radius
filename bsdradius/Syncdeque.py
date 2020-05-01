@@ -32,7 +32,6 @@ Various synchronization queues
 # HeadURL		$HeadURL: file:///Z:/backup/svn/bsdradius/branches/v_0_7/bsdradius/Syncdeque.py $
 # Author:		$Author: atis $
 # File version:	$Revision: 313 $
-# Last changes:	$Date: 2007-07-02 16:56:26 +0300 (Pr, 02 Jūl 2007) $
 
 
 import collections, thread
