@@ -9,6 +9,7 @@ django-admin.py shell --settings=gaia_server.settings<<EOF
 
 from gaia_radius_interface.models import RadiusClient
 import json
+import os
 
 CLIENT_ID = os.environ['CLIENT_ID']
 
