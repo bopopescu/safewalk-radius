@@ -10,6 +10,7 @@
 $INCLUDE dictionary.cisco
 $INCLUDE dictionary.quintum
 $INCLUDE dictionary.openser
+$INCLUDE dictionary.fortinet
 
 # standard RADIUS attributes
 # http://www.iana.org/assignments/radius-types
