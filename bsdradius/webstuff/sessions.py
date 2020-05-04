@@ -15,7 +15,7 @@ storeInDb()
 # HeadURL		$HeadURL: file:///Z:/backup/svn/webstuff/tags/release20061229_v_1_0_0/webstuff/sessions.py $
 # Author:		$Author: atis $
 # File version:	$Revision: 45 $
-# Last changes:	$Date: 2006-06-05 13:54:09 +0300 (Pr, 05 Jūn 2006) $
+# Last changes:	$Date: 2006-06-05 13:54:09 +0300 (Pr, 05 Jun 2006) $
 
 
 import time, exceptions

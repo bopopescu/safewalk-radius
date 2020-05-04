@@ -32,7 +32,7 @@ BSDRadius module for static users file access
 # HeadURL		$HeadURL: file:///Z:/backup/svn/bsdradius/branches/v_0_7/bsdradius/serverModules/mod_usersfile.py $
 # Author:		$Author: valts $
 # File version:	$Revision: 231 $
-# Last changes:	$Date: 2006-06-16 14:28:51 +0300 (Pk, 16 Jūn 2006) $
+# Last changes:	$Date: 2006-06-16 14:28:51 +0300 (Pk, 16 Jun 2006) $
 
 
 import exceptions
