@@ -5,7 +5,7 @@ from bsdradius.Config import main_config
 import subprocess
 import os
 
-CLIENT_ID = os.environ['CLIENT_ID']
+CLIENT_ID = os.environ.get('CLIENT_ID', None)
 
 if CLIENT_ID:
 	RADIUS_CLIENTS_FILE = '/tmp/radius_clients_%s' % CLIENT_ID
