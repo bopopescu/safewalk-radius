@@ -126,6 +126,12 @@ def safewalk_funct_authc(received, check, reply):
       if response_code == 'ACCESS_ALLOWED':
         reply_message = "Access allowed"
         reply['Reply-Message'] = reply_message
+        
+        safewalk_group = reply.get('group', None) 
+        if safewalk_group:
+            group_attr = safewalk_conf['group_name_reply']
+            reply[unicode(group_attr)] = safewalk_group
+        
         info(RADIUS_AUTH_SUCCEED, transaction_id, {'status_code': r.status_code}, received = received)
         return 'ALLOWED'
       elif response_code == 'ACCESS_CHALLENGE':
@@ -145,8 +151,8 @@ def safewalk_funct_authc(received, check, reply):
         reply['Reply-Message'] = reply_message
         info(RADIUS_AUTH_DENIED, transaction_id, {'status_code': r.status_code, 'reply_message' : reply_message}, received = received)
         return 'DENIED'
-    except Exception:
-      reply_message = "Can't connect to Safewalk Server"
+    except Exception, e:
+      reply_message = "Unexpected error: %s" % e
       reply['Reply-Message'] = reply_message
       error(RADIUS_AUTH_DENIED, transaction_id, {'status_code': 'exception', 'reply_message' : reply_message}, received = received)
       return 'DENIED'
@@ -159,3 +165,6 @@ def safewalk_funct_acct(received):
 			
 def safewalk_funct_shutdown():
   info(RADIUS_SAFEWALK_SHUTDOWN)
+
+
+

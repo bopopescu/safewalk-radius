@@ -83,6 +83,7 @@ defaultOptions = {
 'api_enable' : 'no',
 'django_enable' : 'no',
 'customer' : '',
+'group_name_reply' : 'Group-Name'
 },
 'AUTHORIZATION' : {
 'packet_timeout' : '5',
