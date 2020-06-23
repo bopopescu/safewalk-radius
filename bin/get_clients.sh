@@ -1,11 +1,10 @@
 #!/bin/bash
 
-source /home/safewalk/safewalk-server-venv/bin/activate
 CLIENT_ID=$1
 
 export CLIENT_ID
 
-django-admin.py shell --settings=gaia_server.settings<<EOF
+/home/safewalk/server-venv-$CLIENT_ID/bin/django-admin.py shell --settings=gaia_server.settings<<EOF
 
 from gaia_radius_interface.models import RadiusClient
 import json
@@ -33,4 +32,3 @@ with open(RADIUS_CLIENTS_FILE, mode='w') as f:
 
 EOF
 CLIENT_ID=
-deactivate
