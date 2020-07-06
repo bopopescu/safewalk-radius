@@ -118,7 +118,6 @@ def safewalk_funct_authc(received, check, reply):
       response_object = json.loads(r.text)
       response_object = dict(map(lambda (k, v): (str(k), str(v)), response_object.items()))
 
-
       response_code =  response_object.get('code')
       if 'code' in response_object: del response_object['code']
       if 'transaction-id' in response_object: del response_object['transaction-id']
