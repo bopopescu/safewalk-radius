@@ -83,7 +83,9 @@ defaultOptions = {
 'api_enable' : 'no',
 'django_enable' : 'no',
 'customer' : '',
-'group_name_reply' : 'Group-Name'
+'group_name_reply' : 'Group-Name',
+'amqp_broker_usr' : 'safewalk',
+'amqp_host' : 'localhost'
 },
 'AUTHORIZATION' : {
 'packet_timeout' : '5',

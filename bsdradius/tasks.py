@@ -4,11 +4,14 @@ Created on Nov 24, 2014
 @author: ataboada
 '''
 from celery import Celery
-from bsdradius.Config import main_config
+from bsdradius import Config
 
-amqp_broker_usr = 'safewalk'
-amqp_broker_pwd = 'b963a869d28fff3cdfaf1748250e2e30'
-amqp_host = 'localhost'
+Config.readMainConf()
+safewalk_conf = Config.main_config['SAFEWALK']
+
+amqp_broker_usr=safewalk_conf['amqp_broker_usr']
+amqp_broker_pwd=safewalk_conf['amqp_broker_pwd']
+amqp_host=safewalk_conf['amqp_host']
 
 app = Celery('tasks', broker='amqp://%s:%s@%s//' % (
   amqp_broker_usr,
